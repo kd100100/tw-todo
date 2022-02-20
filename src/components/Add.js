@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Form(props) {
+function Add(props) {
     const [name, setName] = useState("");
 
     function handleChange(e) {
@@ -12,6 +12,7 @@ function Form(props) {
         props.addTask(name);
         setName("");
     }
+    
     return (
         <form onSubmit={handleSubmit}>
             <h2 className="label-wrapper">
@@ -35,4 +36,4 @@ function Form(props) {
     );
 }
 
-export default Form;
+export default Add;
